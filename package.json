@@ -1,0 +1,19 @@
+{
+  "name": "HackerNews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch",
+    "headless": "nightwatch --headless"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nightwatch": "^1.5.1"
+  },
+  "devDependencies": {
+    "chromedriver": "^88.0.0"
+  }
+}
