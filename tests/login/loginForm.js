@@ -28,8 +28,7 @@ describe('Login form', function() {
       const invalidCreateAccountMessage = 'Usernames can only contain';
 
       loginPage
-        .clearValue('input[name="acct"]')
-        .clearValue('input[name="pw"]')
+        .clearForm('@account', '@password')
         .click('input[value="login"]');
 
       loginPage.expect.element('body').text.to.contain(invalidCreateAccountMessage);
