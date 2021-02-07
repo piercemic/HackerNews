@@ -14,6 +14,8 @@ module.exports = {
   // if this is not specified, the test source must be passed as the second argument to the test runner.
   src_folders: ['tests'],
 
+  // unit_tests_mode: true,
+
   // See https://nightwatchjs.org/guide/working-with-page-objects/
   page_objects_path: ['page-objects'],
 
@@ -26,9 +28,23 @@ module.exports = {
   // See https://nightwatchjs.org/guide/#external-globals
   globals_path : '',
 
+  test_workers: {
+    "enabled": false,
+    "workers": "auto"
+  },
+
   webdriver: {},
 
   test_settings: {
+    mocha_tests : {
+      "test_runner" : {
+        "type" : "mocha",
+        "options" : {
+          "ui" : "bdd",
+          "reporter" : "list"
+        }
+      }
+    },
     default: {
       disable_error_log: false,
       launch_url: 'https://nightwatchjs.org',
