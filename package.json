@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "nightwatch",
-    "headless": "nightwatch --headless"
+    "headless": "nightwatch --headless",
+    "test:vrt": "nightwatch -c nightwatch.conf.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nightwatch": "^1.5.1"
+    "nightwatch": "^1.5.1",
+    "nightwatch-vrt": "^0.2.10"
   },
   "devDependencies": {
     "chromedriver": "^88.0.0"
